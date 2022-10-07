@@ -1,25 +1,31 @@
-
-// let headerExample = 'lZB9EptbPQhA695ipmuswc3Q1wFVxtieAvna'; //JWT header example
-// const SEPARATOR = '.';
-// let payloadExample = 'eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ'; // JWT payload example
-// const PAYLOADLIMIT = 74;
 'use strict';
 
+import * as dotenv from 'dotenv'
 
-const HEADERLIMIT = 36; // limit of the headerstring
+dotenv.config();
+
+
+
+const HEADERLIMIT = process.env.HEADERLIMIT; // limit of the headerstring
 
 const makeTokenHeader = (length: number) => {
   let result = '';
   const CHARACTERS = 'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789';
-  const CHARACTERSLength = CHARACTERS.length;
+  const CHARACTERS1337 = '¥€€$T$₴₴';
+  const CHARACTERS_Length = CHARACTERS.length;
   for (let i = 0; i < length; i++) {
-    result += CHARACTERS.charAt(Math.floor(Math.random() * CHARACTERSLength));
+    result += CHARACTERS.charAt(Math.floor(Math.random() * CHARACTERS_Length));
+    while (i = length/2){
+      result += CHARACTERS
+    }
   }
   return result;
 };
 
 console.log(makeTokenHeader(HEADERLIMIT));
 
-// const makePayload = (length: number) => {
+const makePayload = (amount: number) => {
+  let result = '';
+  const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-// }
+}
