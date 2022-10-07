@@ -4,9 +4,7 @@ import * as dotenv from 'dotenv'
 
 dotenv.config();
 
-
-
-const HEADERLIMIT = process.env.HEADERLIMIT; // limit of the headerstring
+const HEADERLIMIT = process.env.HEADERLIMIT;
 
 const makeTokenHeader = (length: number) => {
   let result = '';
@@ -22,7 +20,7 @@ const makeTokenHeader = (length: number) => {
   return result;
 };
 
-console.log(makeTokenHeader(HEADERLIMIT));
+console.log(makeTokenHeader(HEADERLIMIT)); // creating headeroftoken
 
 const makePayload = (amount: number) => {
   let result = '';
