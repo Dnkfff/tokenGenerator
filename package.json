@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Dnkfff/tokenGenerator#readme",
   "dependencies": {
     "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7"
   }
 }
