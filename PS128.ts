@@ -25,5 +25,4 @@ console.log(makeTokenHeader(HEADERLIMIT)); // creating headeroftoken
 const makePayload = (amount: number) => {
   let result = '';
   const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
 }
