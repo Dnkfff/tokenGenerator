@@ -1,3 +1,3 @@
-# tokenGenerator Українізований
+# String Randomizer {tokenGenerator} Українізований
 
 Simple tokenHeaderGenerator.
