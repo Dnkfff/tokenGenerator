@@ -1,29 +1,29 @@
 'use strict';
 
-import * as dotenv from 'dotenv'
+//import dotenv from "dotenv";
 
-dotenv.config();
+//dotenv.config({ silent: process.env.NODE_ENV === 'production' });
 
 const HEADERLIMIT = process.env.HEADERLIMIT;
 
-const makeTokenHeader = (length: number) => {
+const makeTokenHeader = (length) => {
   let result = '';
   const CHARACTERS = 'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789';
+  const CHARACTERS0 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const CHARACTERS1 = '诶必西弟衣 艾付 记 爱耻 挨宅	开饿罗饿母恩呕披酷耳艾斯踢忧维 大波留 埃克斯 歪 再得';
   const CHARACTERS1337 = '¥€€$T$₴₴';
   const CHARACTERS_Length = CHARACTERS.length;
   for (let i = 0; i < length; i++) {
     result += CHARACTERS.charAt(Math.floor(Math.random() * CHARACTERS_Length));
-    while (i = length/2){
-      result += CHARACTERS
-    }
   }
   return result;
 };
 
 console.log(makeTokenHeader(HEADERLIMIT)); // creating headeroftoken
 
-const makePayload = (amount: number) => {
+const makePayload = (amount) => {
   let result = '';
   const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
+  const CHARACTERS0 = 'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789';
+  
 }

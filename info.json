@@ -1,4 +1,5 @@
 {
     "alg": "PS128",
-    "typ": "JWT"
+    "typ": "JWT",
+    "type": "StartOfJWT"
 }
