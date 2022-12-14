@@ -1,5 +1,6 @@
-import { v4 as uuidv4 } from 'uuid';
+import uuidv4Module  from '/uuidv4Module.js';
+import uuidv5Module from './uudiv5Module.js';
 
-let myuuid = uuidv4();
+console.log("Random UUIDv4 is:" + uuidv4Module)
+console.log("UUIDv5 is:" + uuidv5Module)
 
-console.log('Random UUID is: ' + myuuid);

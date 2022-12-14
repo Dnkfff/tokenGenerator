@@ -1,8 +1,9 @@
 {
   "name": "tokenGeneretor",
-  "version": "0.0.1",
-  "description": "��#\u0000 \u0000t\u0000o\u0000k\u0000e\u0000n\u0000G\u0000e\u0000n\u0000e\u0000r\u0000a\u0000t\u0000o\u0000r\u0000\u0000S\u0000i\u0000m\u0000p\u0000l\u0000e\u0000 \u0000t\u0000o\u0000k\u0000e\u0000n\u0000H\u0000e\u0000a\u0000d\u0000e\u0000r\u0000G\u0000e\u0000n\u0000e\u0000r\u0000a\u0000t\u0000o\u0000r\u0000.",
+  "version": "0.0.2",
+  "description": "Simple token and identificator generator",
   "main": "uuid.ts",
+  "type": "module",
   "scripts": {
     "test": "ts-node ./PS128.ts"
   },
