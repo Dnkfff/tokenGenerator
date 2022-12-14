@@ -6,7 +6,12 @@
 
 const HEADERLIMIT = process.env.HEADERLIMIT;
 
+<<<<<<< HEAD:PS128.js
 const makeTokenHeader = (length) => {
+=======
+
+const makeTokenHeader = (length: any) => {
+>>>>>>> 0b25ef92f6e23e582ff19e54d10e1f65d528d22e:PS128.ts
   let result = '';
   const CHARACTERS = 'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789';
   const CHARACTERS0 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

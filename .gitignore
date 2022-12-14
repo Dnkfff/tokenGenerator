@@ -1,4 +1,8 @@
 .env
 env.d.ts
 node_modules
+<<<<<<< HEAD
 /package-lock.json
+=======
+/package-lock.json
+>>>>>>> 0b25ef92f6e23e582ff19e54d10e1f65d528d22e
