@@ -1,4 +1,5 @@
 'use strict';
+const crypto = require("crypto");
 
 //import dotenv from "dotenv";
 
@@ -11,7 +12,6 @@ const makeTokenHeader = (length) => {
 =======
 
 const makeTokenHeader = (length: any) => {
->>>>>>> 0b25ef92f6e23e582ff19e54d10e1f65d528d22e:PS128.ts
   let result = '';
   const CHARACTERS = 'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789';
   const CHARACTERS0 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -26,9 +26,5 @@ const makeTokenHeader = (length: any) => {
 
 console.log(makeTokenHeader(HEADERLIMIT)); // creating headeroftoken
 
-const makePayload = (amount) => {
-  let result = '';
-  const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  const CHARACTERS0 = 'АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789';
-  
-}
+let payload = crypto.randomBytes(20).toString('hex');
+  console.log(payload);
